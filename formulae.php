@@ -8,7 +8,7 @@ if (!isset($_SESSION['username'])) {
 $username = $_SESSION['username'];
 
 // ==========================================
-// 🧠 YOUR FORMULA DATABASE
+// 🧠 FORMULA DATABASE
 // ==========================================
 $formulas = [
     1 => [
