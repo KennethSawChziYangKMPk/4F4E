@@ -1,7 +1,5 @@
 <?php
 session_start();
-// If you process login on this same page, include config.php here. 
-// Otherwise, it will just send the data to login_process.php!
 ?>
 
 <!DOCTYPE html>
