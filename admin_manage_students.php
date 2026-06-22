@@ -8,7 +8,7 @@ if (!isset($_SESSION['username']) || strtolower($_SESSION['role']) !== 'admin') 
 }
 
 $username = $_SESSION['username'];
-require 'config.php'; // Use your centralized database connection
+require 'config.php'; 
 
 $message = "";
 
