@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php'; // Load your database connection
+require 'config.php'; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Grab the data from the login form
