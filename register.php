@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['pass']; 
     $matric = trim($_POST['NoMatric']);
     
-    // FIX 1: Look for 'sem1_grade' to match your HTML form!
+    // FIX 1: Look for 'sem1_grade' to match HTML form!
     $s1_grade = isset($_POST['sem1_grade']) ? (float)$_POST['sem1_grade'] : 0.00;
     
     $college = isset($_POST['college']) ? $_POST['college'] : 'Not Specified';
