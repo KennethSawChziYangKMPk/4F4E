@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php'; // Your Supabase connection
+require 'config.php';
 
 $message = "";
 
