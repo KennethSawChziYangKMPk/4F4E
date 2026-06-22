@@ -8,7 +8,7 @@ if (!isset($_SESSION['username']) || strtolower($_SESSION['role']) !== 'admin') 
 }
 
 $username = $_SESSION['username'];
-require 'config.php'; // Using your standard Supabase connection config
+require 'config.php'; 
 
 $filter_date = isset($_GET['filter_date']) ? $_GET['filter_date'] : '';
 $reviews = [];
