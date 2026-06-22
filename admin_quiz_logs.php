@@ -8,7 +8,7 @@ if (!isset($_SESSION['username']) || strtolower($_SESSION['role']) !== 'admin') 
 }
 
 $username = $_SESSION['username'];
-require 'config.php'; // Using your centralized DB connection
+require 'config.php'; 
 
 $student_search = isset($_GET['student']) ? trim($_GET['student']) : '';
 $chapter_search = isset($_GET['chapter']) ? trim($_GET['chapter']) : '';
