@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-require 'config.php'; // This loads your Supabase connection ($pdo)
+require 'config.php'; 
 
 $message = "";
 
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $pdo->prepare($check_sql);
         $stmt->execute(['user' => $user, 'matric' => $matric]);
 
-        // If we find exactly 1 row that matches BOTH...
+        // If find exactly 1 row that matches BOTH...
         if ($stmt->rowCount() === 1) {
             $update_sql = "UPDATE student SET pass = :pass WHERE username = :user";
             $update_stmt = $pdo->prepare($update_sql);
