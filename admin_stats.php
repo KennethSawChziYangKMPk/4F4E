@@ -2,8 +2,6 @@
 session_start();
 
 // SECURITY: Kick out anyone who isn't logged in OR isn't an admin
-// (I updated this to use the role-based check from import.php for consistency, 
-// but you can swap it back to the hardcoded 'saw' check if you prefer!)
 if (!isset($_SESSION['username']) || strtolower($_SESSION['role']) !== 'admin') {
     header("Location: login.php");
     exit();
