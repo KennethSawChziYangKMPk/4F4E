@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php'; // This replaces the hardcoded mysqli connection!
+require 'config.php'; 
 
 // SECURITY: Kick out anyone who isn't logged in OR isn't an admin
 if (!isset($_SESSION['username']) || strtolower($_SESSION['role']) !== 'admin') {
