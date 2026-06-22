@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php'; // This loads your Supabase $pdo connection
+require 'config.php'; 
 
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
