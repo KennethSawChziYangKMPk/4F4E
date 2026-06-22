@@ -1,7 +1,5 @@
 <?php 
-// Grab the current page name so we can highlight the active link
 $current_page = basename($_SERVER['PHP_SELF']); 
-// Make sure username is set, otherwise default to Student
 $username = $_SESSION['username'] ?? 'Student';
 ?>
 
